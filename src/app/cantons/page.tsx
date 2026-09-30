@@ -1,4 +1,5 @@
 import { Metadata } from "next";
+import Link from "next/link";
 import { Breadcrumb } from "@/components/Breadcrumb";
 import { TrustCard } from "@/components/TrustCard";
 import { CantonDirectory } from "@/components/CantonDirectory";
@@ -16,6 +17,21 @@ export const metadata: Metadata = {
 export default function CantonsPage() {
   return (
     <div className="w-full flex flex-col">
+      {/* Top Independence Notice Banner */}
+      <aside aria-label="Independence disclosure" className="w-full bg-surface-container-low border-b border-outline-variant/60 py-2.5 px-6">
+        <div className="max-w-container mx-auto flex items-center justify-between gap-4 text-xs text-on-surface-variant font-mono">
+          <div className="flex items-center gap-2">
+            <span className="w-2 h-2 rounded-full bg-secondary shrink-0"></span>
+            <span>
+              <strong>Independent Guide:</strong> Explanatory overview of cantonal taxation. Not tax advice or an official cantonal tax service.
+            </span>
+          </div>
+          <Link href="/about" className="hidden sm:inline hover:text-primary underline shrink-0">
+            About Our Project
+          </Link>
+        </div>
+      </aside>
+
       {/* Top Meta & Title Bar */}
       <div className="w-full bg-surface-container-low py-8 px-6 border-b border-outline-variant/60">
         <div className="max-w-container mx-auto flex flex-col gap-6">
@@ -38,7 +54,7 @@ export default function CantonsPage() {
 
             <div className="flex items-center gap-2 shrink-0 bg-surface-container-lowest px-3 py-2 rounded border border-outline-variant/60 shadow-sm font-mono text-xs">
               <span className="w-2 h-2 rounded-full bg-secondary"></span>
-              <span className="text-on-surface-variant uppercase">SR 642.118 Framework · 2025 Cycle</span>
+              <span className="text-on-surface-variant uppercase">Withholding Tax Framework · 2025</span>
             </div>
           </div>
         </div>
@@ -70,10 +86,10 @@ export default function CantonsPage() {
             </p>
             <div className="p-4 bg-surface-container-low rounded border border-outline-variant/60 flex flex-col gap-1">
               <span className="font-mono text-[10px] uppercase tracking-wider text-on-surface-muted font-semibold">
-                Statutory Note
+                Important Note
               </span>
               <p className="text-xs text-on-surface-variant">
-                Because rates vary down to the communal postal code, published &quot;average Swiss tax rates&quot; are mathematical abstractions that do not reflect legal pay slip deductions.
+                Because rates vary down to the communal postal code, published &quot;average Swiss tax rates&quot; are mathematical abstractions that do not reflect actual pay slip deductions.
               </p>
             </div>
           </div>
@@ -89,7 +105,7 @@ export default function CantonsPage() {
                 <h3 className="text-base font-semibold text-primary">Direct Federal Tax</h3>
                 <span className="font-mono text-xs text-secondary font-medium">Bundessteuer</span>
                 <p className="text-xs text-on-surface-variant leading-relaxed">
-                  Statutory federal component identical across all 26 cantons. Set by the Federal Assembly, progression curves apply uniformly.
+                  Federal tax component identical across all 26 cantons. Set by the Federal Assembly, progression curves apply uniformly.
                 </p>
               </div>
               <div className="pt-3 border-t border-surface-container font-mono text-[11px] text-on-surface font-semibold">
@@ -193,7 +209,7 @@ export default function CantonsPage() {
                 <div className="flex flex-col gap-1.5 pt-2 text-xs">
                   <div className="flex items-center gap-2">
                     <CheckCircle2 className="w-3.5 h-3.5 text-secondary shrink-0" />
-                    <span>Low statutory cantonal &amp; communal multipliers</span>
+                    <span>Low cantonal &amp; communal multipliers</span>
                   </div>
                   <div className="flex items-center gap-2">
                     <CheckCircle2 className="w-3.5 h-3.5 text-secondary shrink-0" />
@@ -278,12 +294,12 @@ export default function CantonsPage() {
                   <span className="text-xs text-on-surface-variant">Geneva, Vaud, Neuchâtel</span>
                 </div>
                 <p className="text-xs text-on-surface-variant leading-relaxed">
-                  Progressive income taxation balanced through family quotient systems (<em>quotient familial</em>), comprehensive public health subsidies, and statutory cantonal minimum wage legislation.
+                  Progressive income taxation balanced through family quotient systems (<em>quotient familial</em>), comprehensive public health subsidies, and cantonal minimum wage legislation.
                 </p>
                 <div className="flex flex-col gap-1.5 pt-2 text-xs">
                   <div className="flex items-center gap-2">
                     <CheckCircle2 className="w-3.5 h-3.5 text-secondary shrink-0" />
-                    <span>Statutory minimum wages (GE CHF 24.32/h)</span>
+                    <span>Cantonal minimum wages (GE CHF 24.32/h)</span>
                   </div>
                   <div className="flex items-center gap-2">
                     <CheckCircle2 className="w-3.5 h-3.5 text-secondary shrink-0" />
@@ -315,7 +331,7 @@ export default function CantonsPage() {
         <div className="bg-surface-container-lowest p-8 rounded shadow-sm border border-outline-variant/60 flex flex-col lg:flex-row gap-8 items-start">
           <div className="flex flex-col gap-3 lg:max-w-md shrink-0">
             <span className="font-mono text-xs text-secondary font-semibold uppercase tracking-wider">
-              Statutory Tax Rights
+              Tax Rights &amp; Procedures
             </span>
             <h3 className="text-2xl font-semibold text-primary tracking-tight">
               The Right to Retrospective Assessment (NOV)
@@ -361,10 +377,10 @@ export default function CantonsPage() {
         <section className="flex flex-col gap-6 pt-4">
           <div className="flex flex-col gap-1">
             <span className="font-mono text-xs uppercase tracking-wider text-secondary font-semibold">
-              Civic Directory
+              Authorities Directory
             </span>
             <h2 className="text-2xl font-semibold text-primary tracking-tight">
-              Official Cantonal Authorities Directory (All 26 Cantons)
+              Cantonal Authorities Directory (All 26 Cantons)
             </h2>
             <p className="text-xs sm:text-sm text-on-surface-variant">
               Direct official portals for cantonal tax administrations and migration offices across the Swiss Confederation.

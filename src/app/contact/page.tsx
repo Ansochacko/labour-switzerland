@@ -3,9 +3,9 @@ import { Breadcrumb } from "@/components/Breadcrumb";
 import { Mail, AlertCircle, FileCheck } from "lucide-react";
 
 export const metadata: Metadata = {
-  title: "Contact Legal Editorial Desk | Labour Switzerland",
+  title: "Contact Editorial Desk | Labour Switzerland",
   description:
-    "Contact the editorial and legal research desk at Labour Switzerland for statutory corrections, methodology questions, or general inquiries.",
+    "Contact the editorial research desk at Labour Switzerland for data corrections, methodology questions, or general inquiries.",
   alternates: {
     canonical: "https://labourswitzerland.com/contact",
   },
@@ -20,14 +20,14 @@ export default function ContactPage() {
         <div className="flex items-center gap-2">
           <span className="w-2.5 h-2.5 rounded-full bg-secondary"></span>
           <span className="font-mono text-xs uppercase tracking-wider text-secondary font-semibold">
-            Editorial Bureau
+            Editorial Team
           </span>
         </div>
         <h1 className="text-3xl sm:text-4xl font-semibold text-primary tracking-tight">
           Contact &amp; Corrections Desk
         </h1>
         <p className="text-base text-on-surface-variant leading-relaxed">
-          Have an inquiry regarding our statutory sourcing, or wish to flag a newly updated cantonal ordinance or collective labor agreement? We welcome constructive feedback from researchers, legal practitioners, and workers.
+          Have an inquiry regarding our sourcing, or wish to flag a newly updated cantonal ordinance or collective labor agreement? We welcome constructive feedback from researchers, legal practitioners, and workers.
         </p>
       </div>
 
@@ -40,12 +40,12 @@ export default function ContactPage() {
             </div>
             <div>
               <h2 className="text-base font-semibold text-primary">Editorial Communication</h2>
-              <span className="font-mono text-xs text-on-surface-variant">General &amp; Legal Desks</span>
+              <span className="font-mono text-xs text-on-surface-variant">General &amp; Editorial Inquiries</span>
             </div>
           </div>
 
           <p className="text-xs text-on-surface-variant leading-relaxed">
-            For editorial feedback, statutory amendments, or technical inquiries regarding the portal, please direct inquiries to:
+            For editorial feedback, data corrections, or technical inquiries regarding the portal, please direct inquiries to:
           </p>
 
           <div className="p-3 bg-surface-container-low rounded border border-outline-variant/60 font-mono text-xs text-primary font-semibold">
@@ -53,7 +53,7 @@ export default function ContactPage() {
           </div>
 
           <div className="pt-2 text-xs text-on-surface-muted leading-relaxed">
-            We aim to review and verify all statutory correction submissions against official Fedlex and SEM publications within 2 business days.
+            We aim to review and verify all correction submissions against official Fedlex and SEM publications within 2 business days.
           </div>
         </div>
 

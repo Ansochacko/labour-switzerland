@@ -281,7 +281,7 @@ export function CalculatorWidget() {
                     htmlFor="vacation-toggle"
                     className="text-xs font-semibold text-on-surface cursor-pointer"
                   >
-                    Statutory Vacation Indemnity (Ferienentschädigung)
+                    Vacation Pay Allowance (Ferienentschädigung)
                   </label>
                   <span className="font-mono text-[10px] bg-surface-container-high px-1.5 py-0.5 rounded text-on-surface-variant">
                     Art. 329a CO
@@ -410,7 +410,7 @@ export function CalculatorWidget() {
           <div className="flex flex-col">
             <div className="flex items-center justify-between">
               <h3 className="text-sm text-primary font-semibold">
-                Mandatory Statutory Deductions
+                Standard Payroll Deductions
               </h3>
               <span className="font-mono text-xs text-secondary font-semibold">
                 OFAS/BSV Rates
@@ -487,7 +487,7 @@ export function CalculatorWidget() {
         <div className="bg-surface-container-lowest p-6 rounded shadow-sm border border-outline-variant/60 flex flex-col gap-3">
           <div className="flex items-center gap-2">
             <span className="font-mono text-xs uppercase tracking-wider text-secondary font-semibold">
-              Official Net Tax Portals
+              External Net Tax Calculators
             </span>
           </div>
           <p className="text-xs text-on-surface-variant leading-relaxed">
@@ -521,9 +521,9 @@ export function CalculatorWidget() {
           authorityFull="Labor Standards & Wage Statistics"
           legalBasis="SR 822.11 / CO Art. 322"
           verificationPeriod="VERIFIED FOR 2025"
-          verificationDate="Audited Jan 2025 · Legal Editorial"
+          verificationDate="Reviewed Jan 2025 · Editorial Team"
           officialUrl="https://www.fedlex.admin.ch/eli/cc/1966/57_57_57/en"
-          sourceLabel="Federal Labor Standards Framework"
+          sourceLabel="Labor Standards Framework"
         />
       </div>
     </div>

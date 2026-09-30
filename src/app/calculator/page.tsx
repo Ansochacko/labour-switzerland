@@ -1,4 +1,5 @@
 import { Metadata } from "next";
+import Link from "next/link";
 import { Breadcrumb } from "@/components/Breadcrumb";
 import { CalculatorWidget } from "@/components/CalculatorWidget";
 import { ExternalLink, ShieldAlert } from "lucide-react";
@@ -6,7 +7,7 @@ import { ExternalLink, ShieldAlert } from "lucide-react";
 export const metadata: Metadata = {
   title: "Gross Pay Calculator Switzerland (Hourly, Monthly, 13th) | Labour Switzerland",
   description:
-    "Free gross pay and hourly wage converter for Swiss employment contracts. Calculate 12 vs 13 month distributions, vacation pay indemnity, and review statutory deductions.",
+    "Free gross pay and hourly wage converter for Swiss employment contracts. Calculate 12 vs 13 month distributions, vacation pay allowance, and review standard payroll deductions.",
   alternates: {
     canonical: "https://labourswitzerland.com/calculator",
   },
@@ -15,6 +16,21 @@ export const metadata: Metadata = {
 export default function CalculatorPage() {
   return (
     <div className="w-full flex flex-col">
+      {/* Top Independence Notice Banner */}
+      <aside aria-label="Independence disclosure" className="w-full bg-surface-container-low border-b border-outline-variant/60 py-2.5 px-6">
+        <div className="max-w-container mx-auto flex items-center justify-between gap-4 text-xs text-on-surface-variant font-mono">
+          <div className="flex items-center gap-2">
+            <span className="w-2 h-2 rounded-full bg-secondary shrink-0"></span>
+            <span>
+              <strong>Independent Tool:</strong> Estimates gross contractual conversions only. Not an official tax calculator or government portal.
+            </span>
+          </div>
+          <Link href="/about" className="hidden sm:inline hover:text-primary underline shrink-0">
+            About Our Project
+          </Link>
+        </div>
+      </aside>
+
       {/* Top Hero Strip */}
       <div className="w-full bg-surface-container-low py-8 px-6 border-b border-outline-variant/60">
         <div className="max-w-container mx-auto flex flex-col gap-6">
@@ -22,7 +38,7 @@ export default function CalculatorPage() {
             <Breadcrumb items={[{ name: "Gross Pay Calculator", href: "/calculator" }]} />
             <div className="flex items-center gap-2 px-3 py-1 bg-surface-container rounded-full text-on-surface-variant font-mono text-[11px]">
               <span className="w-1.5 h-1.5 rounded-full bg-secondary"></span>
-              <span>SR 822.11 Labor Law Standard</span>
+              <span>Swiss Labor Law Baseline (40–42.5 hrs/wk)</span>
             </div>
           </div>
 
@@ -44,7 +60,7 @@ export default function CalculatorPage() {
                   ESTIMATE ONLY · GROSS SALARY
                 </span>
                 <span className="font-mono text-[11px] text-on-surface-muted flex items-center gap-1">
-                  Non-commercial civic tool
+                  Independent educational tool
                 </span>
               </div>
               <p className="text-xs text-on-surface-variant leading-relaxed">

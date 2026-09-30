@@ -21,14 +21,14 @@ export default function MethodologyPage() {
         <div className="flex items-center gap-2">
           <span className="w-2.5 h-2.5 rounded-full bg-secondary"></span>
           <span className="font-mono text-xs uppercase tracking-wider text-secondary font-semibold">
-            Civic Integrity &amp; Editorial Standard
+            Editorial Standards &amp; Research Integrity
           </span>
         </div>
         <h1 className="text-3xl sm:text-4xl font-semibold text-primary tracking-tight">
           Sourcing &amp; Verification Methodology
         </h1>
         <p className="text-base text-on-surface-variant leading-relaxed">
-          Federal labor regulations and immigration statutes require uncompromising precision. Our editorial framework cross-checks primary legal gazettes to prevent administrative misinformation.
+          Swiss labor regulations and immigration rules require uncompromising precision. Our editorial framework cross-checks official gazettes and statistical surveys to ensure reliable, high-integrity information.
         </p>
       </div>
 
@@ -37,7 +37,7 @@ export default function MethodologyPage() {
         authorityFull="Official Federal Compendium & Statistical Authority"
         legalBasis="SR 101 (Federal Constitution) / SR 142.20 (FNIA / AIG)"
         verificationPeriod="VERIFIED 2025"
-        verificationDate="Audited Quarterly"
+        verificationDate="Reviewed Periodically"
         officialUrl="https://www.fedlex.admin.ch"
         sourceLabel="Federal Legislation Directory"
       />

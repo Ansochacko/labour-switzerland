@@ -20,14 +20,14 @@ export default function DisclaimerPage() {
         <div className="flex items-center gap-2">
           <span className="w-2.5 h-2.5 rounded-full bg-secondary"></span>
           <span className="font-mono text-xs uppercase tracking-wider text-secondary font-semibold">
-            Statutory Scope
+            Editorial Scope
           </span>
         </div>
         <h1 className="text-3xl sm:text-4xl font-semibold text-primary tracking-tight">
           Disclaimer &amp; Independence Statement
         </h1>
         <p className="text-base text-on-surface-variant leading-relaxed">
-          Please review the following statutory disclosures regarding the scope, limitations, and civic independence of Labour Switzerland.
+          Please review the following disclosures regarding the scope, limitations, and editorial independence of Labour Switzerland.
         </p>
       </div>
 
@@ -35,7 +35,7 @@ export default function DisclaimerPage() {
         {/* Core user requirement paragraph */}
         <div className="p-4 bg-surface-container-low rounded border-l-4 border-l-primary flex flex-col gap-2">
           <span className="font-mono text-xs uppercase tracking-wider font-semibold text-primary">
-            Official Advisory Notice
+            Advisory Notice
           </span>
           <p className="text-on-surface font-medium leading-relaxed">
             &ldquo;Labour Switzerland provides general informational content about work permits, wages, and working life in Switzerland. We aim to keep information accurate and up to date, but regulations, tax rules, and wage levels can change and vary by canton. Information on this website should not be considered individualized legal, tax, or immigration advice. Always verify important information with the State Secretariat for Migration (SEM), your canton&apos;s tax authority, or a qualified advisor.&rdquo;
@@ -45,7 +45,7 @@ export default function DisclaimerPage() {
         <div className="flex flex-col gap-3">
           <h2 className="text-base font-semibold text-primary">1. Independence and Non-Affiliation</h2>
           <p>
-            Labour Switzerland is an independent civic information service. <strong>Labour Switzerland is not affiliated with, endorsed by, or operated by the Swiss Federal Government, the State Secretariat for Migration (SEM), the State Secretariat for Economic Affairs (SECO), the Federal Statistical Office (FSO / BFS), the Federal Tax Administration (ESTV), or any of the 26 cantonal administrations.</strong>
+            Labour Switzerland is an independent information service. <strong>Labour Switzerland is not affiliated with, endorsed by, or operated by the Swiss Federal Government, the State Secretariat for Migration (SEM), the State Secretariat for Economic Affairs (SECO), the Federal Statistical Office (FSO / BFS), the Federal Tax Administration (ESTV), or any of the 26 cantonal administrations.</strong>
           </p>
         </div>
 
@@ -59,7 +59,7 @@ export default function DisclaimerPage() {
         <div className="flex flex-col gap-3">
           <h2 className="text-base font-semibold text-primary">3. Scope of Calculators &amp; Estimators</h2>
           <p>
-            The salary conversion and tax estimators provided on this website are for illustrative and orientation purposes only. They model gross contractual conversions and standard statutory deduction bands. They do not constitute an official tax assessment or guarantee of take-home earnings. For individualized tax filings, refer to the Federal Tax Administration&apos;s ESTV calculator or your canton&apos;s tax administration.
+            The salary conversion and tax estimators provided on this website are for illustrative and orientation purposes only. They model gross contractual conversions and standard deduction bands. They do not constitute an official tax assessment or guarantee of take-home earnings. For individualized tax filings, refer to the Federal Tax Administration&apos;s ESTV calculator or your canton&apos;s tax administration.
           </p>
         </div>
 

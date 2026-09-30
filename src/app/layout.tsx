@@ -23,7 +23,7 @@ export const metadata: Metadata = {
     template: "%s | Labour Switzerland",
   },
   description:
-    "Plain-English guide to Swiss work permits (B, L, G, C), withholding tax (Quellensteuer), and benchmark wages. Verified against SEM and FSO federal statutes.",
+    "Plain-English guide to Swiss work permits (B, L, G, C), withholding tax (Quellensteuer), and benchmark wages. Sourced from SEM guidelines and FSO data.",
   keywords: [
     "B permit Switzerland explained",
     "L permit Switzerland",
@@ -34,7 +34,7 @@ export const metadata: Metadata = {
     "withholding tax Switzerland permit",
     "moving to Switzerland for work",
   ],
-  authors: [{ name: "Labour Switzerland Editorial Bureau" }],
+  authors: [{ name: "Labour Switzerland Editorial Team" }],
   creator: "Labour Switzerland",
   publisher: "Labour Switzerland",
   formatDetection: {
@@ -52,13 +52,13 @@ export const metadata: Metadata = {
     siteName: "Labour Switzerland",
     title: "Labour Switzerland — Swiss Residence Permits, Wages & Tax Rights",
     description:
-      "Plain-English guide to Swiss work permits (B, L, G, C), withholding tax (Quellensteuer), and benchmark wages. Verified against SEM and FSO federal statutes.",
+      "Plain-English guide to Swiss work permits (B, L, G, C), withholding tax (Quellensteuer), and benchmark wages. Sourced from SEM guidelines and FSO data.",
   },
   twitter: {
     card: "summary_large_image",
     title: "Labour Switzerland — Swiss Residence Permits, Wages & Tax Rights",
     description:
-      "Plain-English guide to Swiss work permits (B, L, G, C), withholding tax (Quellensteuer), and benchmark wages. Verified against SEM and FSO federal statutes.",
+      "Plain-English guide to Swiss work permits (B, L, G, C), withholding tax (Quellensteuer), and benchmark wages. Sourced from SEM guidelines and FSO data.",
   },
   robots: {
     index: true,
@@ -85,7 +85,7 @@ export default function RootLayout({
     url: "https://labourswitzerland.com",
     logo: "https://labourswitzerland.com/logo.svg",
     description:
-      "Independent civic information service covering Swiss work permits, taxation at source, and labor standards.",
+      "Independent information guide covering Swiss work permits, taxation at source, and labor standards.",
     areaServed: {
       "@type": "Country",
       name: "Switzerland",

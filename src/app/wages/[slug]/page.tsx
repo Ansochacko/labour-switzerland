@@ -25,7 +25,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
     return {
       title: "Minimum Wage in Switzerland (2025 by Canton) | Labour Switzerland",
       description:
-        "Is there a minimum wage in Switzerland? There is no federal minimum wage. Discover the 5 cantons with statutory minimum wages: Geneva, Basel-Stadt, Neuchâtel, Jura, and Ticino.",
+        "Is there a minimum wage in Switzerland? There is no federal minimum wage. Discover the 5 cantons with cantonal minimum wages: Geneva, Basel-Stadt, Neuchâtel, Jura, and Ticino.",
       alternates: {
         canonical: "https://labourswitzerland.com/wages/minimum-wage-switzerland",
       },
@@ -53,7 +53,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
 
   return {
     title: `${benchmark.title} Salary in Switzerland (2025) | Labour Switzerland`,
-    description: `Official median salary for ${benchmark.title} in Switzerland: CHF ${benchmark.medianAnnualChf.toLocaleString("de-CH")}/yr. Sourced from FSO and collective agreements.`,
+    description: `Published median salary benchmark for ${benchmark.title} in Switzerland: CHF ${benchmark.medianAnnualChf.toLocaleString("de-CH")}/yr. Sourced from FSO and collective agreements.`,
     alternates: {
       canonical: `https://labourswitzerland.com/wages/${benchmark.slug}`,
     },
@@ -76,7 +76,7 @@ export default function WageDetailPage({ params }: Props) {
           <div className="flex items-center gap-2">
             <span className="w-2.5 h-2.5 rounded-full bg-secondary"></span>
             <span className="font-mono text-xs uppercase tracking-wider text-secondary font-semibold">
-              Federal &amp; Cantonal Statutory Standards
+              Federal Law &amp; Cantonal Regulations
             </span>
           </div>
           <h1 className="text-3xl sm:text-4xl font-semibold text-primary tracking-tight">
@@ -101,7 +101,7 @@ export default function WageDetailPage({ params }: Props) {
         {/* 5 Cantons with Minimum Wage */}
         <section className="flex flex-col gap-6">
           <h2 className="text-2xl font-semibold text-primary">
-            The 5 Cantons with Statutory Minimum Wages
+            The 5 Cantons with Cantonal Minimum Wages
           </h2>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
             {CANTONAL_MINIMUM_WAGES.map((c) => (
@@ -180,7 +180,7 @@ export default function WageDetailPage({ params }: Props) {
           <div className="flex items-center gap-2">
             <span className="w-2.5 h-2.5 rounded-full bg-secondary"></span>
             <span className="font-mono text-xs uppercase tracking-wider text-secondary font-semibold">
-              Swiss Labor Code Regulation
+              Swiss Labor Code &amp; Practices
             </span>
           </div>
           <h1 className="text-3xl sm:text-4xl font-semibold text-primary tracking-tight">
@@ -197,7 +197,7 @@ export default function WageDetailPage({ params }: Props) {
           authorityFull="Swiss Code of Obligations (Obligationenrecht)"
           legalBasis="Art. 322d CO (SR 220)"
           verificationPeriod="VERIFIED 2025"
-          verificationDate="Audited Jan 2025 · Legal Editorial"
+          verificationDate="Reviewed Jan 2025 · Editorial Team"
           officialUrl="https://www.fedlex.admin.ch/eli/cc/27/317_321_377/en"
           sourceLabel="Federal Gazette SR 220"
         />
@@ -374,7 +374,7 @@ export default function WageDetailPage({ params }: Props) {
         verificationPeriod={benchmark.referencePeriod}
         verificationDate={benchmark.verificationDate}
         officialUrl="https://www.gate.bfs.admin.ch/salarium/public/index.html"
-        sourceLabel="Official Survey Sourced Data"
+        sourceLabel="Published Survey Data"
       />
 
       {/* Details & Calculator Callout */}
@@ -384,7 +384,7 @@ export default function WageDetailPage({ params }: Props) {
             Convert this wage to hourly and monthly net estimates
           </h2>
           <p className="text-xs text-on-surface-variant leading-relaxed">
-            Use our Gross Pay Calculator to convert this benchmark against different weekly hours (40 to 42.5 hrs/week) and review expected statutory deductions (AHV, ALV, BVG, and Quellensteuer).
+            Use our Gross Pay Calculator to convert this benchmark against different weekly hours (40 to 42.5 hrs/week) and review expected standard deductions (AHV, ALV, BVG, and Quellensteuer).
           </p>
         </div>
         <Link

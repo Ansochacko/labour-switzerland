@@ -8,7 +8,7 @@ import { ArrowRight, ExternalLink, ShieldCheck, Scale, Banknote } from "lucide-r
 export const metadata: Metadata = {
   title: "Swiss Wages & Salary Benchmarks by Industry | Labour Switzerland",
   description:
-    "Official Swiss salary benchmarks based on FSO Earnings Structure Survey and Collective Labor Agreements (GAV/CCT). Tech, MEM engineering, finance, healthcare, and cantonal minimum wages.",
+    "Swiss salary benchmarks based on FSO Earnings Structure Survey and Collective Labor Agreements (GAV/CCT). Tech, MEM engineering, finance, healthcare, and cantonal minimum wages.",
   alternates: {
     canonical: "https://labourswitzerland.com/wages",
   },
@@ -17,6 +17,21 @@ export const metadata: Metadata = {
 export default function WagesPage() {
   return (
     <div className="w-full flex flex-col">
+      {/* Top Independence Notice Banner */}
+      <aside aria-label="Independence disclosure" className="w-full bg-surface-container-low border-b border-outline-variant/60 py-2.5 px-6">
+        <div className="max-w-container mx-auto flex items-center justify-between gap-4 text-xs text-on-surface-variant font-mono">
+          <div className="flex items-center gap-2">
+            <span className="w-2 h-2 rounded-full bg-secondary shrink-0"></span>
+            <span>
+              <strong>Independent Guide:</strong> Sourced benchmarks compiled from FSO/BFS statistics and collective agreements. Not an official tariff schedule.
+            </span>
+          </div>
+          <Link href="/about" className="hidden sm:inline hover:text-primary underline shrink-0">
+            About Our Project
+          </Link>
+        </div>
+      </aside>
+
       {/* Top Breadcrumb & Administrative Context Strip */}
       <section className="w-full bg-surface-container-low px-6 py-8 border-b border-outline-variant/60">
         <div className="max-w-container mx-auto flex flex-col gap-4">
@@ -27,14 +42,14 @@ export default function WagesPage() {
               <div className="flex items-center gap-2">
                 <span className="w-2.5 h-2.5 rounded-full bg-secondary"></span>
                 <span className="font-mono text-xs uppercase tracking-wider text-secondary font-semibold">
-                  Federal Wage Standards &amp; Tariffs
+                  Published Salary Benchmarks &amp; Guidelines
                 </span>
               </div>
               <h1 className="text-3xl sm:text-4xl font-semibold text-primary tracking-tight">
-                Swiss Wage Standards &amp; Industry Benchmarks
+                Swiss Wage Benchmarks &amp; Sector Guidelines
               </h1>
               <p className="text-base text-on-surface-variant max-w-3xl leading-relaxed">
-                Switzerland has no statutory nationwide minimum wage, except in five cantons (Geneva, Neuchâtel, Jura, Ticino, Basel-Stadt). Compensation is determined by market benchmarks, Collective Employment Agreements (GAV/CCT), and standard cantonal salary thresholds.
+                Switzerland has no nationwide minimum wage, except in five cantons (Geneva, Neuchâtel, Jura, Ticino, Basel-Stadt). Compensation is determined by market benchmarks, Collective Employment Agreements (GAV/CCT), and standard cantonal salary thresholds.
               </p>
             </div>
 
@@ -42,7 +57,7 @@ export default function WagesPage() {
             <div className="lg:col-span-4 flex flex-col gap-2 bg-surface-container-lowest p-4 rounded shadow-sm border border-outline-variant/60">
               <div className="flex items-center justify-between pb-2 border-b border-surface-container">
                 <span className="font-mono text-[11px] text-on-surface-variant font-semibold">
-                  STATUTORY MINIMUM WAGES
+                  CANTONAL MINIMUM WAGES
                 </span>
                 <span className="font-mono text-[11px] text-secondary font-semibold">
                   5 OF 26 CANTONS
@@ -58,7 +73,7 @@ export default function WagesPage() {
               </div>
               <div className="flex justify-between items-center text-xs text-on-surface-variant">
                 <span>Neuchâtel / Jura / Ticino</span>
-                <span className="font-mono text-secondary font-semibold">Statutory Floors</span>
+                <span className="font-mono text-secondary font-semibold">Cantonal Floors</span>
               </div>
             </div>
           </div>
@@ -77,7 +92,7 @@ export default function WagesPage() {
                 <div className="flex flex-col gap-1">
                   <div className="flex items-center gap-2">
                     <span className="font-mono text-[11px] uppercase tracking-wider text-secondary-container font-semibold">
-                      Federal Authority Directive
+                      Official Tool Guidance
                     </span>
                     <span className="text-white/40">·</span>
                     <span className="font-mono text-xs text-white/80">SECO Direction du travail</span>
@@ -220,7 +235,7 @@ export default function WagesPage() {
             <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-4">
               <div>
                 <span className="font-mono text-xs uppercase tracking-wider text-secondary font-semibold">
-                  Statutory Cantonal Floors
+                  Cantonal Minimum Floors
                 </span>
                 <h3 className="text-xl font-semibold text-primary mt-1">
                   Cantonal Minimum Wage Legislation (5 Cantons)

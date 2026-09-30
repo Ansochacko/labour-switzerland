@@ -32,7 +32,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
     return {
       title: "Permit Category Under Review | Labour Switzerland",
       description:
-        "Statutory verification in progress for this Swiss permit category. Cross-referenced with the Federal State Secretariat for Migration (SEM).",
+        "Editorial verification in progress for this Swiss permit category. Cross-referenced with guidelines from the State Secretariat for Migration (SEM).",
     };
   }
 
@@ -75,11 +75,11 @@ export default function PermitDetailPage({ params }: Props) {
                 Permit Data Not Yet Verified
               </h1>
               <span className="px-2 py-0.5 bg-surface-container text-on-surface-variant font-mono text-xs rounded uppercase font-semibold">
-                Pending Legal Audit
+                Pending Editorial Review
               </span>
             </div>
             <p className="text-sm text-on-surface-variant leading-relaxed max-w-2xl">
-              Our research desk only publishes permit dossiers that have been cross-checked against primary Swiss federal statutes (AIG/FNIA SR 142.20) and SEM circulars. This specific permit query is currently undergoing editorial review.
+              Our editorial desk only publishes permit guides that have been cross-referenced with primary Swiss federal immigration law (AIG/FNIA) and SEM directives. This specific permit category is currently undergoing editorial review.
             </p>
             <div className="pt-4 flex flex-wrap gap-4 font-mono text-xs">
               <Link
@@ -122,12 +122,27 @@ export default function PermitDetailPage({ params }: Props) {
         dangerouslySetInnerHTML={{ __html: JSON.stringify(faqJsonLd) }}
       />
 
+      {/* Top Independence Notice Banner */}
+      <aside aria-label="Independence disclosure" className="w-full bg-surface-container-low border-b border-outline-variant/60 py-2.5 px-6">
+        <div className="max-w-container mx-auto flex items-center justify-between gap-4 text-xs text-on-surface-variant font-mono">
+          <div className="flex items-center gap-2">
+            <span className="w-2 h-2 rounded-full bg-secondary shrink-0"></span>
+            <span>
+              <strong>Independent Guide:</strong> Informational overview compiled from official sources. Not legal advice or affiliated with SEM.
+            </span>
+          </div>
+          <Link href="/disclaimer" className="hidden sm:inline hover:text-primary underline shrink-0">
+            Legal Disclaimer
+          </Link>
+        </div>
+      </aside>
+
       {/* Top Banner / Hero Strip */}
       <div className="w-full bg-surface-container-low py-8 px-6 sm:px-8 border-b border-outline-variant/60">
         <div className="max-w-container mx-auto flex flex-col gap-6">
           <Breadcrumb
             items={[
-              { name: "Permits", href: "/permits" },
+              { name: "Permit Guides", href: "/permits" },
               { name: `${permit.code} Permit` },
             ]}
           />
@@ -139,7 +154,7 @@ export default function PermitDetailPage({ params }: Props) {
                   Permit Class {permit.code}
                 </span>
                 <span className="font-mono text-xs text-on-surface-variant uppercase">
-                  {permit.legalBasis}
+                  Ref: {permit.legalBasis}
                 </span>
               </div>
 
@@ -162,7 +177,7 @@ export default function PermitDetailPage({ params }: Props) {
                 rel="noopener noreferrer"
                 className="px-4 py-2 bg-primary text-white text-xs font-mono rounded shadow-sm hover:bg-primary-container transition-all flex items-center gap-2 font-semibold"
               >
-                <span>Official SEM Portal</span>
+                <span>SEM Migration Portal</span>
                 <ExternalLink className="w-3.5 h-3.5" />
               </a>
             </div>
@@ -235,7 +250,7 @@ export default function PermitDetailPage({ params }: Props) {
                   <h2 className="text-xl font-semibold text-primary">What It Means</h2>
                 </div>
                 <span className="font-mono text-[11px] uppercase tracking-wider text-on-surface-variant">
-                  Statutory Foundations
+                  Legal Framework
                 </span>
               </div>
 
@@ -293,7 +308,7 @@ export default function PermitDetailPage({ params }: Props) {
                     {permit.sections.thirteenthMonth}
                   </p>
                   <div className="pt-2 border-t border-surface-container font-mono text-[11px] text-on-surface-muted">
-                    Probation statutory standard: 1–3 months (Art. 335b CO)
+                    Standard probation in Swiss practice: 1–3 months (Art. 335b CO)
                   </div>
                 </div>
               </div>
@@ -404,10 +419,10 @@ export default function PermitDetailPage({ params }: Props) {
                     </span>
                   </div>
                   <p className="text-xs text-on-surface-variant leading-relaxed">
-                    Our legal research desk is currently auditing cantonal discretionary precedents with SEM circulars regarding transitions from third-country dependent employment to self-employment (<em>Selbstständigerwerbende</em>). Sourced analysis will be published once verified. In the interim, consult your direct cantonal migration office.
+                    Our editorial research desk is currently reviewing cantonal discretionary practices with SEM guidelines regarding transitions from third-country dependent employment to self-employment (<em>Selbstständigerwerbende</em>). Sourced analysis will be published once verified. In the interim, consult your cantonal migration office.
                   </p>
                   <div className="font-mono text-xs text-on-surface-muted pt-1">
-                    Working File: REF-CH-2025-AIG-TRANS · <Link href="/methodology" className="underline hover:text-primary">Our Verification Standard</Link>
+                    Reference: Art. 19–21 FNIA · <Link href="/methodology" className="underline hover:text-primary">Our Editorial Standard</Link>
                   </div>
                 </div>
               </div>
@@ -421,7 +436,7 @@ export default function PermitDetailPage({ params }: Props) {
                   <h2 className="text-xl font-semibold text-primary">Frequently Asked Questions</h2>
                 </div>
                 <span className="font-mono text-[11px] uppercase tracking-wider text-on-surface-variant">
-                  Official Q&amp;A
+                  Common Inquiries
                 </span>
               </div>
 
@@ -449,10 +464,10 @@ export default function PermitDetailPage({ params }: Props) {
             <div className="bg-surface-container-lowest p-5 rounded shadow-sm border border-outline-variant/60 sticky top-24 flex flex-col gap-6">
               <div className="flex flex-col gap-1 pb-3 bg-surface-container-low p-2.5 rounded">
                 <span className="font-mono text-[10px] uppercase tracking-wider text-on-surface-variant font-semibold">
-                  Statutory Navigation
+                  Page Contents
                 </span>
                 <span className="text-base font-semibold text-primary">
-                  {permit.code} Permit Dossier
+                  {permit.code} Permit Guide
                 </span>
               </div>
 
@@ -537,7 +552,7 @@ export default function PermitDetailPage({ params }: Props) {
 
               <div className="p-3 bg-surface-container rounded flex items-center gap-2 font-mono text-[11px] text-on-surface-variant">
                 <CheckCircle2 className="w-4 h-4 text-secondary shrink-0" />
-                <span>Independent Civic Publication · Not SEM</span>
+                <span>Independent Information Guide · Non-Governmental</span>
               </div>
             </div>
           </div>

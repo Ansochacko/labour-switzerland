@@ -72,7 +72,7 @@ export default async function Image() {
                 letterSpacing: "0.04em",
               }}
             >
-              INDEPENDENT CIVIC GUIDE · CH
+              INDEPENDENT INFORMATION GUIDE
             </span>
           </div>
         </div>
@@ -105,7 +105,7 @@ export default async function Image() {
                 letterSpacing: "0.04em",
               }}
             >
-              SR 142.20 OASA COMPLIANT · 2025
+              INDEPENDENT RESIDENCE &amp; WORK GUIDE · 2025
             </span>
           </div>
           <span
@@ -140,7 +140,7 @@ export default async function Image() {
           }}
         >
           <span style={{ fontSize: "16px", color: "#757E88", fontWeight: 500 }}>
-            Official Authorities: SEM · SECO · FSO/BFS · ESTV
+            Primary Sources: SEM · SECO · FSO/BFS · ESTV
           </span>
           <span
             style={{

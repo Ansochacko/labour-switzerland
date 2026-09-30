@@ -4,7 +4,7 @@
   <rect x="13.5" y="15" width="5" height="18" rx="0.5" fill="#FBFBF9" />
   <rect x="7" y="21.5" width="18" height="5" rx="0.5" fill="#FBFBF9" />
   
-  <!-- Rational modern Swiss wordmark -->
+  <!-- Rational modern Swiss wordmark with clear independent informational framing -->
   <text x="44" y="26" fill="#1C1E21" font-family="system-ui, -apple-system, sans-serif" font-size="14" font-weight="700" letter-spacing="0.08em">LABOUR SWITZERLAND</text>
-  <text x="44" y="37" fill="#757E88" font-family="system-ui, -apple-system, sans-serif" font-size="9" font-weight="500" letter-spacing="0.04em">INDEPENDENT CIVIC GUIDE · CH</text>
+  <text x="44" y="37" fill="#757E88" font-family="system-ui, -apple-system, sans-serif" font-size="9" font-weight="500" letter-spacing="0.04em">INDEPENDENT INFORMATION GUIDE</text>
 </svg>

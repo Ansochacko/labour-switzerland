@@ -60,7 +60,7 @@ export function Header() {
                 fontWeight="500"
                 letterSpacing="0.04em"
               >
-                INDEPENDENT CIVIC GUIDE · CH
+                INDEPENDENT INFORMATION GUIDE
               </text>
             </svg>
           </Link>
@@ -91,16 +91,16 @@ export function Header() {
           <div className="hidden md:flex items-center gap-2 px-2.5 py-1 bg-surface-container-high rounded border border-outline-variant/60">
             <span className="w-1.5 h-1.5 rounded-full bg-secondary"></span>
             <span className="font-mono text-[11px] text-on-surface-variant tracking-wider uppercase">
-              Independent Guide · Updated 2025
+              Independent Guide · Non-Governmental
             </span>
           </div>
 
           <div className="flex items-center font-mono text-xs text-on-surface-variant border border-outline-variant/60 rounded px-1.5 py-0.5 bg-surface-container-lowest">
             <span className="text-primary font-semibold px-1">EN</span>
             <span className="text-outline-variant">|</span>
-            <span className="px-1 text-on-surface-muted" title="Federal DE statutory references in dossiers">DE</span>
+            <span className="px-1 text-on-surface-muted" title="German legal references noted in text">DE</span>
             <span className="text-outline-variant">|</span>
-            <span className="px-1 text-on-surface-muted" title="Federal FR statutory references in dossiers">FR</span>
+            <span className="px-1 text-on-surface-muted" title="French legal references noted in text">FR</span>
           </div>
 
           {/* Mobile hamburger */}
@@ -132,8 +132,8 @@ export function Header() {
             </Link>
           ))}
           <div className="pt-3 border-t border-outline-variant flex items-center justify-between text-xs font-mono text-on-surface-variant">
-            <span>SR 142.20 OASA Compliant</span>
-            <span className="text-secondary font-semibold">Live Q1 2025</span>
+            <span>Independent Information Resource</span>
+            <span className="text-secondary font-semibold">Not Affiliated with SEM</span>
           </div>
         </div>
       )}
